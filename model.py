@@ -280,8 +280,8 @@ if __name__ == "__main__":
     predictor = WeatherPredictor()
     predictor.load_model('weather_predictor.pkl')
 
-    print('\nПредсказание на следующий час (2024-12-31 22:00:00)')
-    history = df[:-2]
+    print('\nПредсказание на следующий час (2025-01-01 00:00:00)')
+    history = df
     prediction = predictor.predict_next_hour(history)
     print('Температура   Влажность')
     print(f"{prediction["temperature"]:8.2f}", f"{prediction["humidity"]:12.2f}")
