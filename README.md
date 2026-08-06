@@ -74,4 +74,4 @@ project/
 1. Заморозка дополнительных признаков при предсказании на 24 часа — признаки (pressure, wind_speed, production_level, maintenance, power, tariff_enc) копируются из последней строки и не прогнозируются.
 2. Накопление ошибок при рекурсивном прогнозировании.
 
-+ Стоит добавить кросс-валидацию типа ExpandingWindowSplitter.
+Стоит добавить кросс-валидацию типа ExpandingWindowSplitter.
