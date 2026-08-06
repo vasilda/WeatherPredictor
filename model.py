@@ -1,12 +1,14 @@
+# Стандартные библиотеки
 import joblib
 import numpy as np
 import pandas as pd
 
-from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
+# Модули для модели
 from sklearn.multioutput import MultiOutputRegressor
-
 import xgboost as xgb
 
+# Модули для оценки модели
+from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 
 class WeatherPredictor:
     '''
