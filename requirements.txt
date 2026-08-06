@@ -1,0 +1,14 @@
+# Основные библиотеки
+numpy==1.26.4
+pandas==2.2.2
+scikit-learn==1.5.0
+xgboost==2.1.1
+joblib==1.4.2
+
+# Визуал
+matplotlib==3.9.0
+seaborn==0.13.2
+
+# Дополнительно
+jupyter==1.1.1
+tqdm==4.66.4
