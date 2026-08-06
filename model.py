@@ -50,7 +50,7 @@ class WeatherPredictor:
             for lag in self.lags:
                 df[f"{col}_lag_{lag}"] = df[col].shift(lag)
 
-        # Скользящее окно. Используем только прошлые значения
+        # Скользящее окно
         for col in self.target_columns:
             for window in self.rolling_windows:
                 df[f"{col}_rolling_mean_{window}"] = df[col].rolling(window).mean()
