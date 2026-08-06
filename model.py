@@ -291,5 +291,4 @@ if __name__ == "__main__":
                             prediction["temperature"],
                             prediction["humidity"]
                            ):
-
         print(t,f"{temp:9.2f}", f"{hum:12.2f}")
