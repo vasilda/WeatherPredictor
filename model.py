@@ -208,7 +208,6 @@ class WeatherPredictor:
             raise ValueError("Модель не обучена.")
 
         df = self.prepare_features(df)
-
         y = df[self.target_columns]
 
         df = df.iloc[:-1].copy()
@@ -223,9 +222,8 @@ class WeatherPredictor:
         y_test = y.iloc[split:]
 
         prediction = self.model.predict(X_test)
-
+        
         metrics = {}
-
         for i, target in enumerate(self.target_columns):
 
             mae  = mean_absolute_error(y_test.iloc[:, i], prediction[:, i])
